@@ -1,0 +1,760 @@
+body {
+    font-family: Quicksand;
+    font-size: 13px;
+}
+
+.relative {
+    position: relative;
+}
+
+article, aside, footer, header, nav, section {
+    display: flex;
+}
+
+header {
+    text-align: center;
+    justify-content: center;
+}
+
+h2 {
+    margin: 0;
+}
+h3 {
+    text-align: center;
+}
+
+hr {
+    background-color: #A0A0A0;
+    height: 1px;
+    width: 100%;
+    border: none;
+    padding: 0;
+}
+
+p {
+    margin: 5px;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 15px;
+}
+
+li {
+    color: black;
+    list-style: square;
+    padding: 3px 0 3px 40px;
+
+}
+
+nav ul {
+    text-align: center;
+    margin: auto;
+}
+
+nav li {
+    display: inline-flex;
+    font-family: Arial;
+    padding: 0 20px;
+}
+
+.navbar-black  img {
+    margin-left: 20px;
+    display: none;
+}
+.navbar-black p {
+    color: white;
+}
+
+.navbar-black {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3C3C3C;
+    height: 50px;
+    width: 100%;
+}
+
+.navbar-black a:hover {
+    color: #E0D5C5;
+}
+
+.navbar-white {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.navbar-white a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4px;
+    height: 28px;
+    min-width: 90px;
+}
+
+.navbar-white a:hover {
+    color: white;
+    background-color: #C8B59E;
+}
+
+.navbar-black a {
+    color: #F5F5F5;
+    font-weight: bold;
+    font-size: 12px;
+}
+.navbar-white a {
+    color: #A9A9A9;
+    font-size: 11px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.product-presentation {
+    display: flex;
+    flex-direction: row;
+}
+
+.product-presentation-gallery {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.thumbnails-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 360px;
+    justify-content: space-around;
+
+}
+
+.thumbnails-container-item, .thumbnails-container-item a img {
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    height: 60px;
+}
+
+.big-picture img {
+    display: flex;
+    margin-left: 10px;
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+}
+
+.product-presentation-description {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+}
+
+.order-column, .order-column > * {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.order-column > h1 {
+    align-items: center;
+}
+
+.order-row {
+    display: flex;
+    flex-direction: row;
+}
+.order-row .brown-button {
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.roboto-font {
+    font-family: Roboto;
+}
+
+.slightly-shaded {
+    color: #3C3C3C;
+}
+
+.slightly-shaded-more {
+    color: #969696;
+}
+
+.col-40 {
+    width: 40%;
+}
+
+.col-60 {
+    width: 60%;
+}
+
+.brown-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+    min-width: 150px;
+    padding: 15px 0;
+    background-color: #C8B59E;
+    color: white;
+    font-family: Arial;
+    }
+
+.black-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+    min-width: 200px;
+    padding: 15px 0;
+    color: white;
+    background-color: #3C3C3C;
+    font-family: Arial;
+}
+
+.description-block {
+    padding-top: 35px;
+    padding-bottom: 55px;
+    font-size: 15px;
+}
+.description-block p {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #3C3C3C;
+    text-align: justify;
+}
+
+.description-block-heading {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.description-block-heading strong, .description-block-heading img {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.heading {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.heading strong {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.vintage-collection {
+    display: flex;
+    background: url("http://light-mobile.com/lm_uk_template/images/vintage_collection2.jpg");
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.vintage-collection:hover {
+    opacity: 0.8;
+}
+
+#vintage-collection-upper {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    font-size: 53px;
+}
+#vintage-collection-lower {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 300;
+    font-size: 48px;
+}
+
+.other-collections {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.other-collections-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+.other-collections-row-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    font-size: 27px;
+    width: 186px;
+    height: 186px;
+}
+
+.other-collections-row-item:hover {
+    opacity: 0.6;
+}
+
+.bordered-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border: solid white 2px;
+}
+
+#vintage-bordered-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: solid white 2px;
+}
+.x-marker {
+    margin: 35px;
+}
+
+#denim {
+    background: url("http://light-mobile.com/lm_uk_template/images/MJEANS.jpg");
+}
+#nature {
+    background: url("http://light-mobile.com/lm_uk_template/images/COMODO-BLACK.jpg");
+}
+#glamour {
+    background: url("http://light-mobile.com/lm_uk_template/images/TOSCANA_RED.jpg");
+}
+#pastel {
+    background: url("http://light-mobile.com/lm_uk_template/images/PASTEL.jpg");
+}
+#embossed {
+    background: url("http://light-mobile.com/lm_uk_template/images/EMBOSS.jpg");
+}
+
+.gray-background {
+    background: #F5F5F5;
+}
+
+#opis {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #484848;
+}
+
+.cena {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: black;
+    margin: 10px 0;
+}
+
+#cena {
+    font-size: 29px;
+    margin-right: 10px;
+}
+#logo > img {
+    width: 100%;
+}
+.navbar-black-product-cat {
+    display: none;
+}
+
+.icon-right {
+    content: '';
+    display: none;
+    width: 0.5em;
+    height: 0.5em;
+    margin-left: 2em;
+    border-top: 0.35em solid white;
+    border-right: 0.35em solid white;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#ebay-menu, #product-menu {
+    display: none;
+}
+
+/* Gallery */
+.thumbnails-container-item, .thumbnails-container-item a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3px 0px;
+    width: 60px;
+    height: 60px;
+}
+
+.big-picture {
+    display: flex;
+    max-width: 460px;
+    position: absolute;
+    left: -640px;
+
+}
+.big-picture img {
+    /*margin-left: 40px;*/
+    display: flex;
+    align-items: center;
+}
+.big-picture:target  {
+    position: absolute;
+    /*margin-left: 120px;*/
+    left: 15%;
+}
+#big-picture-1 {
+    position: absolute;
+    /*margin-left: 11%;*/
+    left: 15%;
+}
+
+
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+    .wrapper {
+        width: 90%;
+    }
+    /* Gallery */
+    .thumbnails-container-item, .thumbnails-container-item a {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 3px 0px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .big-picture {
+        display: flex;
+        max-width: 460px;
+        position: absolute;
+        left: -640px;
+
+    }
+    .big-picture img {
+        /*margin-left: 40px;*/
+        display: flex;
+        align-items: center;
+    }
+    .big-picture:target  {
+        position: absolute;
+        margin-left: 120px;
+        left: 0px;
+    }
+    #big-picture-1 {
+        position: absolute;
+        margin-left: 120px;
+        left: 0px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    nav li {
+        padding: 8px;
+    }
+    .wrapper {
+        width: 90%;
+    }
+
+    .product-presentation-gallery {
+        width: 65%;
+    }
+    .product-presentation-description {
+        width: 35%;
+        margin-left: 10px;
+    }
+
+    .other-collections-row {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .other-collections-row-item {
+        margin-bottom: 15px;
+    }
+    /* Gallery */
+    .thumbnails-container-item, .thumbnails-container-item a {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 3px 0px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .big-picture {
+        display: flex;
+        max-width: 380px;
+        max-height: 340px;
+        position: absolute;
+        left: -640px;
+
+    }
+    .big-picture img {
+        margin-left: 70px;
+        display: flex;
+        align-items: center;
+    }
+    .big-picture:target  {
+        position: absolute;
+        margin-left: 100px;
+        left: 0px;
+    }
+    #big-picture-1 {
+        position: absolute;
+        margin-left: 100px;
+        left: 0px;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .wrapper {
+        width: 90%;
+    }
+    nav li {
+        padding: 6px;
+    }
+    .navbar-white li {
+        padding: 0px;
+    }
+    .product-presentation {
+        flex-direction: column;
+    }
+    .product-presentation-description, .product-presentation-gallery {
+        width: 100%;
+        position: relative;
+        overflow: visible;
+    }
+
+    .other-collections-row {
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .other-collections-row-item {
+        margin-bottom: 15px;
+    }
+
+    #vintage-collection-upper {
+        font-size: 40px;
+    }
+    #vintage-collection-lower {
+        font-size: 35px;
+    }
+
+    /* Gallery */
+    .thumbnails-container-item, .thumbnails-container-item a {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 3px 0px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .big-picture {
+        display: flex;
+        max-width: 500px;
+        max-height: 340px;
+        position: absolute;
+        left: -640px;
+
+    }
+    .big-picture img {
+        margin-left: 70px;
+        display: flex;
+        align-items: center;
+    }
+    .big-picture:target  {
+        position: absolute;
+        margin-left: 70px;
+        left: 0px;
+    }
+    #big-picture-1 {
+        position: absolute;
+        margin-left: 70px;
+        left: 0px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .navbar-black-product-cat {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 15px;
+    }
+
+    .navbar-black-product-cat span {
+        margin-left: 10px;
+    }
+
+    .product-presentation {
+        flex-direction: column;
+
+    }
+    .product-presentation-description, .product-presentation-gallery {
+        width: 100%;
+        position: relative;
+        overflow: visible;
+    }
+    .product-presentation-description {
+        margin-top: 30px;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+
+
+    .other-collections-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .other-collections-row-item {
+        margin-bottom: 15px;
+    }
+
+    .mobile-order-column {
+        flex-direction: column;
+    }
+    #vintage-collection-upper {
+        font-size: 30px;
+    }
+
+    #vintage-collection-lower {
+        font-size: 25px;
+    }
+
+    .x-marker {
+        margin: 10px;
+    }
+    .heading {
+        flex-direction: column;
+    }
+    /* Gallery */
+    .thumbnails-container-item, .thumbnails-container-item a {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 3px 0px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .big-picture {
+        display: flex;
+        max-width: 500px;
+        max-height: 280px;
+        position: absolute;
+        left: -620px;
+
+    }
+    .big-picture img {
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .big-picture:target  {
+        position: absolute;
+        margin-left: 60px;
+        left: 0px;
+    }
+    #big-picture-1 {
+        position: absolute;
+        margin-left: 60px;
+        left: 0px;
+    }
+
+    /* Menu mobile */
+
+    #ebay-menu, #product-menu {
+        display: none;
+    }
+    #ebay-menu a, #product-menu a {
+        color: #F5F5F5;
+    }
+    #ebay-menu a:hover, #product-menu a:hover {
+        color: #E0D5C5;
+    }
+    #ebay-menu li, #product-menu li {
+        list-style: none;
+        padding: 0 6px 0 0;
+    }
+
+    #ebay-menu li:last-of-type, #product-menu li:last-of-type {
+        padding-bottom: 6px;
+    }
+
+    .mobile-hidden {
+        display: none;
+    }
+
+    .navbar-black, .navbar-black  img {
+        display: flex;
+        position: relative;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+
+    .navbar-black2-center {
+        justify-content: center;
+    }
+
+    .icon-right {
+        display: flex;
+    }
+
+    .focus:focus ~ #ebay-menu, .focus2:focus ~ #product-menu {
+        position: absolute;
+        display: inline-flex;
+        flex-direction: column;
+        list-style: none;
+        top: 50px;
+
+        background-color: #3C3C3C;
+        z-index: 1;
+    }
+}

@@ -1,0 +1,117 @@
+.brown-button-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    background-color: #C8B59E;
+    color: white;
+    font-family: Arial;
+    cursor: pointer;
+    flex-basis: 100%;
+    float: left;
+    min-width: 90px;
+    width: 10%;
+}
+#flex {
+    margin-top: 30px;
+    display: inline;
+}
+
+#brown-button-1-position {
+    background-color: #C8B59E;
+}
+#brown-button-2-position {
+    margin-left: 5px;
+    background-color: #a59583;
+}
+#brown-button-3-position {
+    margin-left: 5px;
+    background-color: #797064;
+}
+
+input[type=radio]{
+    display: none;
+}
+
+#toggle2-hook, #toggle3-hook {
+    display: none;
+}
+/*label {
+    transition: all 0.5s;
+}*/
+
+#toggle1-hook {
+    -webkit-transition: opacity 1s ease;
+    -moz-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    -ms-transition: opacity 1s ease;
+    transition: opacity 1s ease;
+}
+
+#toggle2-hook {
+    -webkit-transition: opacity 1s ease;
+    -moz-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    -ms-transition: opacity 1s ease;
+    transition: opacity 4s ease;
+}
+
+#toggle3-hook {
+    -webkit-transition: opacity 1s ease;
+    -moz-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    -ms-transition: opacity 1s ease;
+    transition: opacity 1s ease;
+}
+
+input#toggle1:checked ~ #toggle1-hook  {
+    opacity: 0.9;
+    display: flex;
+}
+input#toggle2:checked ~ #toggle2-hook {
+    opacity: 0.9;
+    display: flex;
+}
+input#toggle3:checked ~ #toggle3-hook {
+    opacity: 0.9;
+    display: flex;
+}
+
+
+input#toggle1:checked ~ #toggle2-hook, input#toggle1:checked ~ #toggle3-hook {
+    display: none;
+    opacity: 0;
+}
+
+input#toggle2:checked ~ #toggle1-hook, input#toggle2:checked ~ #toggle3-hook {
+    display: none;
+    opacity: 0;
+}
+
+input#toggle3:checked ~ #toggle1-hook, input#toggle3:checked ~ #toggle2-hook {
+    display: none;
+    opacity: 0;
+}
+
+.animate {
+    animation-name: scale;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.01);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
