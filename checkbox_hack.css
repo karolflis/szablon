@@ -1,32 +1,7 @@
-.brown-button-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 0;
-    background-color: #C8B59E;
-    color: white;
-    font-family: Arial;
-    cursor: pointer;
-    flex-basis: 100%;
-    float: left;
-    min-width: 90px;
-    width: 10%;
-}
+
 #flex {
     margin-top: 30px;
     display: inline;
-}
-
-#brown-button-1-position {
-    background-color: #C8B59E;
-}
-#brown-button-2-position {
-    margin-left: 5px;
-    background-color: #a59583;
-}
-#brown-button-3-position {
-    margin-left: 5px;
-    background-color: #797064;
 }
 
 input[type=radio]{

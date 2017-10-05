@@ -441,6 +441,32 @@ nav li {
     left: 15%;
 }
 
+.brown-button-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    background-color: #C8B59E;
+    color: white;
+    font-family: Arial;
+    cursor: pointer;
+    flex-basis: 100%;
+    float: left;
+    min-width: 110px;
+    width: 12%;
+}
+
+#brown-button-1-position {
+    background-color: #C8B59E;
+}
+#brown-button-2-position {
+    margin-left: 5px;
+    background-color: #a59583;
+}
+#brown-button-3-position {
+    margin-left: 5px;
+    background-color: #797064;
+}
 
 /*------------------------------------------
   Responsive Grid Media Queries - 1280, 1024, 768, 480
@@ -634,6 +660,7 @@ nav li {
         flex-direction: column;
 
     }
+
     .product-presentation-description, .product-presentation-gallery {
         width: 100%;
         position: relative;
@@ -706,6 +733,34 @@ nav li {
         position: absolute;
         margin-left: 60px;
         left: 0px;
+    }
+
+
+    /* Brown buttons */
+    .brown-button-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0;
+        background-color: #C8B59E;
+        color: white;
+        font-family: Arial;
+        cursor: pointer;
+        flex-basis: 100%;
+        /*float: left;*/
+        min-width: 90px;
+        width: 100%;
+    }
+    #brown-button-1-position {
+        background-color: #C8B59E;
+    }
+    #brown-button-2-position {
+        margin-left: 0px;
+        background-color: #a59583;
+    }
+    #brown-button-3-position {
+        margin-left: 0px;
+        background-color: #797064;
     }
 
     /* Menu mobile */
