@@ -74,9 +74,11 @@ nav li {
     align-items: center;
     justify-content: center;
     background-color: #3C3C3C;
-    height: 50px;
+    min-height: 50px;
     width: 100%;
 }
+
+
 
 .navbar-black a:hover {
     color: #E0D5C5;
@@ -468,6 +470,39 @@ nav li {
     background-color: #797064;
 }
 
+.navbar-black2, .navbar-black3 {
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #a59583;
+    min-height: 50px;
+    width: 100%;
+}
+.navbar-black2 {
+    display: none;
+    flex-direction: column;
+}
+
+
+/*.change-order-to-column {
+    display: flex;
+    flex-direction: column;
+}*/
+
+
+
+.focus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+}
+
+.default-hidden {
+    display: none;
+}
+
 /*------------------------------------------
   Responsive Grid Media Queries - 1280, 1024, 768, 480
    1280-1024   - desktop (default grid)
@@ -764,7 +799,24 @@ nav li {
     }
 
     /* Menu mobile */
+    .hover-menu-1:hover .navbar-black2, .hover-menu-2:hover .navbar-black3 {
+        display: flex;
+    }
 
+    .hover-menu-1-hovered, .hover-menu-2-hovered {
+        display: flex;
+        flex-direction: column;
+        margin: 3px;
+    }
+
+    .hover-menu-1-hovered li, .hover-menu-2-hovered li {
+        padding: 3px 0;
+    }
+
+    .default-hidden {
+        display: flex;
+    }
+    /* most of menu mobile classes/ids below are deprecated */
     #ebay-menu, #product-menu {
         display: none;
     }
@@ -786,12 +838,19 @@ nav li {
     .mobile-hidden {
         display: none;
     }
-
-    .navbar-black, .navbar-black  img {
+    .navbar-black {
         display: flex;
         position: relative;
-        justify-content: flex-start;
-        flex-direction: row;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 50px;
+    }
+
+    .navbar-black img {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        flex-direction: column;
     }
 
     .navbar-black2-center {
