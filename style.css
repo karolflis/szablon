@@ -682,6 +682,7 @@ nav li {
         width: 100%;
         position: relative;
         overflow: visible;
+        align-items: center;
     }
 
     .other-collections-row {
