@@ -160,6 +160,10 @@ nav li {
     max-height: 60px;
 }
 
+.thumbnails-container-item {
+    padding: 0 5px;
+}
+
 .big-picture img {
     display: flex;
     /*margin-left: 10px;*/
@@ -855,7 +859,10 @@ nav li {
         /*margin-left: 60px;*/
         left: 0px;
     }
-
+    /*End Gallery*/
+    .thumbnails-container-item {
+        padding: 0;
+    }
 
     /* Brown buttons */
     .brown-button-toggle {
