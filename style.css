@@ -73,7 +73,7 @@ nav li {
 
 .navbar-black {
     display: inline-flex;
-    align-items: center;
+    /*align-items: center;*/
     justify-content: center;
     background-color: #3C3C3C;
     min-height: 50px;
@@ -413,7 +413,7 @@ nav li {
     display: none;
     width: 0.5em;
     height: 0.5em;
-    margin-left: 2em;
+    margin-left: 1.3em;
     border-top: 0.35em solid white;
     border-right: 0.35em solid white;
     -moz-transform: rotate(45deg);
@@ -529,7 +529,7 @@ nav li {
 .focus {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     min-height: 50px;
 }
 
